@@ -9,11 +9,11 @@ import { FaDev, FaDatabase } from "react-icons/fa";
 const personalDetails = [
   {
     label: "Name",
-    value: "John Doe",
+    value: "Harsh Sarsodiya",
   },
   {
     label: "Age",
-    value: "27",
+    value: "24",
   },
   {
     label: "Address",
@@ -21,16 +21,16 @@ const personalDetails = [
   },
   {
     label: "Email",
-    value: "demo@example.com",
+    value: "sarsodiyah@gmail.com",
   },
   {
     label: "Contact No",
-    value: "+11 3456789056",
+    value: "+91 9131454140",
   },
 ];
 
 const jobSummary =
-  "Seasoned and independent Front End Developer with 5 years of experience in blending the art of design with skill of programming to deliver an immersive and engaging user experience through efficient website development, proactive feature optimization, and relentless debugging. Very passionate about aesthetics and UI design. It is imperative that you provide a thorough and professional approach to your resume. As a Front End Developer you will be judged by your ability to use UX and UI concepts and follow design guidelines. It is about expressing your attention to detail and how you can help implement design ideas for your future employer";
+  "I’m Harsh Sarsodiya, a Front End Developer with 1 year of experience specializing in React.js. I focus on building responsive, user-friendly web applications that blend functionality with clean, intuitive design. With a passion for crafting seamless user experiences and a keen eye for detail, I strive to deliver efficient and impactful solutions that align with modern UI/UX principles.";
 
 const About = () => {
   return (

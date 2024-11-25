@@ -12,34 +12,34 @@ import { useState } from "react";
 const portfolioData = [
   {
     id: 2,
-    name: "Ecommerce",
+    name: "Wassup(Chat application)",
     image: ImageOne,
-    link: "",
+    link: "https://github.com/HarshSarsodiya1180/Wass-Upp",
   },
   {
     id: 3,
-    name: "Notes App",
-    link: "",
+    name: "FShare Application",
+    link: "https://github.com/HarshSarsodiya1180/FileShareApp",
     image: ImageTwo,
   },
   {
     id: 2,
-    name: "Supplier Design",
+    name: "OnlineMealwebsite",
     image: ImageThree,
-    link: "",
+    link: "https://github.com/HarshSarsodiya1180/OnlineMealwebsite",
   },
   {
     id: 2,
-    name: "Todo App",
+    name: "Movie App",
     image: ImageFour,
 
-    link: "",
+    link: "https://github.com/HarshSarsodiya1180/Movieapp",
   },
   {
     id: 3,
-    name: "Shopping cart design",
+    name: "Quiz App",
     image: ImageFive,
-    link: "",
+    link: "https://github.com/HarshSarsodiya1180/Quiz-app",
   },
 ];
 
@@ -80,6 +80,13 @@ const Portfolio = () => {
       : portfolioData.filter((item) => item.id === filteredvalue);
 
   console.log(filteredItems);
+  const handleVisitClick = (link) => {
+    if (link) {
+      window.open(link, "_blank");
+    } else {
+      alert("No link available for this project.");
+    }
+  };
 
   return (
     <section id="portfolio" className="portfolio">
@@ -116,7 +123,9 @@ const Portfolio = () => {
                 {index === hoveredValue && (
                   <div>
                     <p>{item.name}</p>
-                    <button>Visit</button>
+                    <button onClick={() => handleVisitClick(item.link)}>
+                      Visit
+                    </button>
                   </div>
                 )}
               </div>
