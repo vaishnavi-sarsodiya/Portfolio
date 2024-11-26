@@ -1,10 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { Animate } from "react-simple-animate";
+import emailjs from "emailjs-com";
 import "./styles.scss";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    description: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const publicKey = "G8fIoWr6_yhKNDHvf"; // Replace with your EmailJS public key
+  const serviceID = "service_oav1879"; // Replace with your EmailJS service ID
+  const templateID = "template_pp9aq2c";
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      message: formData.description,
+    };
+
+    try {
+      await emailjs.send(serviceID, templateID, templateParams, publicKey);
+      alert("Message sent successfully!");
+      setFormData({ name: "", email: "", description: "" });
+    } catch (error) {
+      console.error("Error sending email:", error);
+      alert("Failed to send the message. Please try again.");
+    }
+  };
+
   return (
     <section id="contact" className="contact">
       <PageHeaderContent
@@ -36,14 +73,16 @@ const Contact = () => {
             transform: "translateX(0px)",
           }}
         >
-          <div className="contact__content__form">
+          <form className="contact__content__form" onSubmit={handleSubmit}>
             <div className="contact__content__form__controlswrapper">
               <div>
                 <input
                   required
                   name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   className="inputName"
-                  type={"text"}
+                  type="text"
                 />
                 <label htmlFor="name" className="nameLabel">
                   Name
@@ -53,8 +92,10 @@ const Contact = () => {
                 <input
                   required
                   name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   className="inputEmail"
-                  type={"text"}
+                  type="email"
                 />
                 <label htmlFor="email" className="emailLabel">
                   Email
@@ -64,8 +105,9 @@ const Contact = () => {
                 <textarea
                   required
                   name="description"
+                  value={formData.description}
+                  onChange={handleChange}
                   className="inputDescription"
-                  type={"text"}
                   rows="5"
                 />
                 <label htmlFor="description" className="descriptionLabel">
@@ -73,11 +115,12 @@ const Contact = () => {
                 </label>
               </div>
             </div>
-            <button>Submit</button>
-          </div>
+            <button type="submit">Submit</button>
+          </form>
         </Animate>
       </div>
     </section>
   );
 };
+
 export default Contact;
