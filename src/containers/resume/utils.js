@@ -7,7 +7,7 @@ export const data = {
     // },
     {
       title: "Metafic",
-      subTitle: "Banglore,India",
+      subTitle: "Bangalore,India",
       description: "Fronted Web development",
       date: "2024 - Present",
     },
