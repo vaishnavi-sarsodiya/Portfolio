@@ -11,35 +11,16 @@ import { useState } from "react";
 
 const portfolioData = [
   {
-    id: 2,
-    name: "Wassup(Chat application)",
-    image: ImageOne,
-    link: "https://github.com/HarshSarsodiya1180/Wass-Upp",
-  },
-  {
     id: 3,
-    name: "FShare Application",
-    link: "https://github.com/HarshSarsodiya1180/FileShareApp",
+    name: "AI-Based Chatbot",
+    link: "https://github.com/vaishnavi-sarsodiya/ai-chatbot",
     image: ImageTwo,
   },
   {
     id: 2,
-    name: "OnlineMealwebsite",
+    name: "Online Mealwebsite",
     image: ImageThree,
-    link: "https://github.com/HarshSarsodiya1180/OnlineMealwebsite",
-  },
-  {
-    id: 2,
-    name: "Movie App",
-    image: ImageFour,
-
-    link: "https://github.com/HarshSarsodiya1180/Movieapp",
-  },
-  {
-    id: 3,
-    name: "Quiz App",
-    image: ImageFive,
-    link: "https://github.com/HarshSarsodiya1180/Quiz-app",
+    link: "https://github.com/vaishnavi-sarsodiya/Online-meal-website",
   },
 ];
 

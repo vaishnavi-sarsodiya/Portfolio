@@ -9,11 +9,11 @@ import { FaDev, FaDatabase } from "react-icons/fa";
 const personalDetails = [
   {
     label: "Name",
-    value: "Harsh Sarsodiya",
+    value: "Vaishnavi Sarsodiya",
   },
   {
     label: "Age",
-    value: "24",
+    value: "20",
   },
   {
     label: "Address",
@@ -21,16 +21,16 @@ const personalDetails = [
   },
   {
     label: "Email",
-    value: "sarsodiyah@gmail.com",
+    value: "sarsodiya2405@gmail.com",
   },
   {
     label: "Contact No",
-    value: "+91 9131454140",
+    value: "+91 8827768867",
   },
 ];
 
 const jobSummary =
-  "I’m Harsh Sarsodiya, a Front End Developer with 1 year of experience specializing in React.js. I focus on building responsive, user-friendly web applications that blend functionality with clean, intuitive design. With a passion for crafting seamless user experiences and a keen eye for detail, I strive to deliver efficient and impactful solutions that align with modern UI/UX principles.";
+  "I'm Vaishnavi Sarsodiya, a Information Technology student and aspiring Frontend Developer. As a fresher, I have built academic and personal projects using HTML, CSS, JavaScript, and React. I enjoy creating responsive and user-friendly web interfaces and I am eager to learn new technologies, strengthen my skills, and contribute to real-world projects in a professional environment";
 
 const About = () => {
   return (
@@ -52,8 +52,8 @@ const About = () => {
               transform: "translatex(0px)",
             }}
           >
-            <h3>Front End Developer</h3>
-            <p>{jobSummary}</p>
+            <h3>Frontend Developer (Fresher)</h3>
+            <p className="about__content__summary">{jobSummary}</p>
           </Animate>
 
           <Animate

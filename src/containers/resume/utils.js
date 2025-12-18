@@ -1,41 +1,28 @@
 export const data = {
-  experience: [
-    // {
-    //   title: "Consultant",
-    //   subTitle: "Miami, FL",
-    //   description: " User Experience, Visual Design",
-    // },
-    {
-      title: "Metafic",
-      subTitle: "Bangalore,India",
-      description: "Fronted Web development",
-      date: "2024 - Present",
-    },
-    {
-      title: "Bharatpe Intern",
-      subTitle: "Indore, INDIA",
-      description: "Web Developement",
-      date: "2023",
-    },
-  ],
+  // {
+  //   title: "Consultant",
+  //   subTitle: "Miami, FL",
+  //   description: " User Experience, Visual Design",
+  // },
+
   education: [
     {
       title: "Secondary",
-      subTitle: "RamaKrishna Mission Vidhyapeeth School",
+      subTitle: "Holy Cross Hr. Sec School",
       description: "10th Grade",
-      date: "2016 - 2017",
+      date: "2019 - 2020",
     },
     {
       title: "Higher Secondary",
-      subTitle: "RamaKrishna Mission Vidhyapeeth School",
+      subTitle: "Shri Cloth Market Hr. Sec School",
       description: "12th Grade in Science",
-      date: "2018 - 2019",
+      date: "2021 - 2022",
     },
     {
-      title: "MCA",
-      subTitle: "International Intitute of Professional Studies",
-      description: "Master of Computer Applications",
-      date: "2022 - 2024",
+      title: "B.E",
+      subTitle: "Institute of Engineering and Technology",
+      description: "Information Technology",
+      date: "2022 - 2026",
     },
   ],
 };
