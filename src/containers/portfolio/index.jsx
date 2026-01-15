@@ -22,6 +22,12 @@ const portfolioData = [
     image: ImageThree,
     link: "https://github.com/vaishnavi-sarsodiya/Online-meal-website",
   },
+  {
+    id: 1,
+    name: "IET Studybooth",
+    image: ImageOne,
+    link: "https://github.com/vaishnavi-sarsodiya/Iet-Studybooth",
+  },
   
 ];
 
